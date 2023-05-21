@@ -6,6 +6,7 @@ import Loader from 'components/Loader/Loader';
 import Modal from 'components/Modal/Modal';
 import { fetchPhotos } from '../../api.js';
 import Button from 'components/Button/Button';
+import PropTypes from 'prop-types';
 
 class ImageGallery extends Component {
   state = {
@@ -88,3 +89,6 @@ class ImageGallery extends Component {
 }
 
 export default ImageGallery;
+ImageGallery.propTypes = {
+  searchName: PropTypes.string.isRequired,
+};

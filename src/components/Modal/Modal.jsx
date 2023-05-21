@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import scss from './modal.module.scss';
-
+import PropTypes from 'prop-types';
 class Modal extends Component {
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyDown);
@@ -35,3 +35,6 @@ class Modal extends Component {
 }
 
 export default Modal;
+Modal.propTypes = {
+  modalUrl: PropTypes.string.isRequired,
+}

@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import scss from './imageGalleryItem.module.scss';
+import PropTypes from 'prop-types';
 
 class ImageGalleryItem extends Component {
   handleClick = () => {
@@ -18,3 +19,7 @@ class ImageGalleryItem extends Component {
 }
 
 export default ImageGalleryItem;
+ImageGalleryItem.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  imageName: PropTypes.string.isRequired,
+};
