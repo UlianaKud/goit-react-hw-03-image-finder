@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import axios from 'axios';
 import scss from './imageGallery.module.scss';
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 import Loader from 'components/Loader/Loader';
